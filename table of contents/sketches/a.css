@@ -1,0 +1,32 @@
+body{
+font-family:'Crimson Pro';
+background-color: pink;
+}
+
+wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+heading {
+margin-botton: 60px;
+}
+chapter {
+  letter-spacing: 10px
+}
+p
+{
+  margin:0;
+}
+
+span{
+  display: block;
+  letter-spacing: 10px;
+}

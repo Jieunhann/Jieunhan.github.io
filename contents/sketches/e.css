@@ -1,0 +1,44 @@
+body{
+font-family:Helvetica;
+background-color: hotpink;
+color: white;
+font-size: 36px;
+font-weight: 300;
+font-variant: small-caps;
+margin: 0;
+text-align: center;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 8px dotted white;
+}
+
+wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 1000;
+  margin: 10;
+  text-align: center;
+}
+
+heading {
+margin-botton: 60px;
+}
+chapter {
+  letter-spacing: 10px
+}
+p
+{
+  margin:0;
+}
+
+span{
+  display: block;
+  letter-spacing: 10px;
+}

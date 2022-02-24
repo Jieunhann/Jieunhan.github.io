@@ -1,6 +1,11 @@
 body{
-font-family:'Crimson Pro';
-background-color: pink;
+font-family: Helvetica bold;
+background-color: hotpink;
+color: white;
+font-size: 36px;
+font-weight: 600;
+margin: 0;
+text-align: center;
 }
 
 wrapper {
@@ -11,8 +16,15 @@ wrapper {
 
 h1{
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
+  text-align: center;
+}
+h2{
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
 }
 
 heading {

@@ -4,14 +4,22 @@ background-color: hotpink;
 color: white;
 font-size: 36px;
 font-weight: 300;
-font-variant: small-caps;
-margin: 0;
+margin: 20vw;
 text-align: center;
 }
 
+.description {
+  font-family: helvetica bold;
+  text-decoration: underline green;
+}
+.page {
+  margin-left: auto;
+}
+
+
 /* Dotted border */
 hr.dotted {
-  border-top: 8px dotted white;
+  border: 30px dotted white;
 }
 
 wrapper {

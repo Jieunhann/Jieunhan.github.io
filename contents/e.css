@@ -4,15 +4,11 @@ background-color: hotpink;
 color: white;
 font-size: 36px;
 font-weight: 300;
-font-variant: small-caps;
-margin: 0;
-text-align: center;
+font-variant:normal;
+margin: 20vw;
+text-align: left;
 }
 
-/* Dotted border */
-hr.dotted {
-  border-top: 8px dotted white;
-}
 
 wrapper {
   display: flex;
@@ -26,7 +22,12 @@ h1{
   margin: 10;
   text-align: center;
 }
-
+h2{
+  font-size: 80px;
+  font-weight: 1000;
+  margin: 10;
+  text-align: center;
+}
 heading {
 margin-botton: 60px;
 }

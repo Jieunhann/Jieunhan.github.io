@@ -1,0 +1,132 @@
+
+body {
+  background-color: magenta;
+  font-family: arial;
+  color: red;
+  font-size: 100px;
+}
+
+.i {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  height: 30vh;
+}
+
+.ii {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.iii {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 80vh;
+  fill: purple;
+}
+
+.item {
+  text-align: center;
+  animation: spinType 4s;
+ animation-duration: 2s;
+  animation-name: spinType;
+  animation-delay: 5s;
+  animation:  spinType 2s ease-in-out 3s;
+}
+
+@keyframes spinType {
+  0% {
+  }
+  20% {
+  }
+  100% {
+  }
+}
+
+
+@keyframes spinType {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+@keyframes one {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes two {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#one {
+  animation: one 5s ease-out infinite;
+  height:300px;
+}
+
+#one path, #one circle {
+  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+  fill:violet;
+}
+
+#one:hover {
+  animation-play-state: running;
+  cursor: pointer;
+  zoom: 5;
+}
+
+#two {
+  animation: two 5s ease-out infinite;
+  height:600px;
+}
+
+#two path, #two circle {
+  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+}
+
+#two:hover {
+  animation-play-state: running;
+  cursor: pointer;
+  zoom: 0.5;
+}
+#four {
+  animation: two 5s ease-out infinite;
+  height:600px;
+}
+
+#four path, #four circle {
+  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+}
+
+#four:hover {
+  animation-play-state: running;
+  cursor: pointer;
+  zoom: 0.5;
+}
+
+/*basic animation, spins once in one second*/
+div.item {
+  animation: spinType 1s;
+}

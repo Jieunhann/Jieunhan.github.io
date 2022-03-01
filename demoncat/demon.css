@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+  color:White;
+  font-family: Didot light;
+  text-align: justify;
+  font-size: 30px;
+  margin: 13vw
+}
+
+h1{
+  font-weight: 500;
+  font-size: 10vw;
+  text-align: center;
+  font-family: didot bold;
+}
+
+#cat{
+  position: absolute;
+  height: 26.5vw;
+  top: 44vw;
+  left: 47vw;
+  z-index: -1;
+}
+#cat2{
+  position: absolute;
+  height: 23vw;
+  top: 121vw;
+  left: 56vw;
+  z-index: -1;
+}
+#cat3{
+  position: absolute;
+  height: 22vw;
+  top: 174vw;
+  left: 65vw;
+  z-index: -1;
+}
+div.a {
+  line-height: 1.6;
+}
+
+div.b {
+  line-height: 1.6;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="yuka2.js"></script>
+        <script>
+        $(document).ready(function() {
+        alert("Make the screen to full-screen to view and scroll down to see the changes when hovering");
+        })
+              $("#one").draggable();
+              $("#one").hover(function(){
+        $("#one").show();
+        })
+        $("#one").click(function(){
+               $("#one").hide();
+               });
+               $("#thick").hover(function(){
+               $("#thyme").append("whatever");
+               });
+
+        </script>
+
+    <title>Home</title>
+
+  </head>
+
+  <style>
+  #home1{
+    position: absolute;
+    height: 50vh;
+    top: 10vw;
+    left: 40vh;
+  }
+  #home2{
+    position: absolute;
+    height: 50.6vh;
+    top: 38vw;
+    left: 40vh;
+  }
+  #home3{
+    position: absolute;
+    height: 4.41vh;
+    top: 67.3vw;
+    left: 40vh;
+  }
+  #home5{
+    position: absolute;
+    height: 52vh;
+    top: 75vw;
+    left: 40vh;
+  }
+  #home6{
+    position: absolute;
+    height: 52vh;
+    top: 110vw;
+    left: 40vh;
+  }
+
+  </style>
+
+  <body>
+        <img id="home1" src="home1.png"/>
+        <img id="home2" src="home2.png"/>
+        <img id="home3" src="home3.png"/>
+        <img id="home5" src="home5.png"/>
+        <img id="home6" src="home6.png"/>
+   </body>
+</html>

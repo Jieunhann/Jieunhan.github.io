@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="yuka2.js"></script>
+        <script>
+        $(document).ready(function() {
+        alert("Make the screen to full-screen to view the resized version of the website and scroll down to see the changes when hovering");
+        })
+              $("#one").draggable();
+              $("#one").hover(function(){
+        $("#one").show();
+        })
+        $("#one").click(function(){
+               $("#one").hide();
+               });
+               $("#thick").hover(function(){
+               $("#thyme").append("whatever");
+               });
+
+        </script>
+
+    <title>Home when resizing</title>
+
+  </head>
+
+  <style>
+  #homere1{
+    position: absolute;
+    height: 100vh;
+    top: 5vw;
+    left: 50vh;
+  }
+  #homere2{
+    position: absolute;
+    height: 100vh;
+    top: 70vw;
+    left: 50vh;
+  }
+
+  }
+
+  </style>
+
+  <body>
+        <img id="homere1" src="homere1.png"/>
+        <img id="homere2" src="homere2.png"/>
+
+   </body>
+</html>

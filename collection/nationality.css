@@ -1,0 +1,235 @@
+.container
+{
+  display: grid;
+}
+
+.entry {
+  border: 2px dotted black;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 0 50px;
+  /*animation: fadeIn 3s ease-in;*/
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 5vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.quotes {
+  width: 80vw;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.quotes .box {
+  position: relative;
+  width: 15vw;
+  height: 20vh;
+  min-height: 10vh;
+  background: black;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 2vw;
+  padding: 3vw;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.quotes .box h4 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+.quotes .box:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.quotes .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+  opacity: 1;
+background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png") center;
+background-size: cover;
+}
+
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box4:hover,
+.quotes .box.box4:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box5:hover,
+.quotes .box.box5:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box6:hover,
+.quotes .box.box6:hover~.bg {
+  opacity: 1;
+  background: url("https://pngimg.com/uploads/flags/flags_PNG14602.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box7:hover,
+.quotes .box.box7:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1280px-Flag_of_the_Netherlands.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box8:hover,
+.quotes .box.box8:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_of_Gabon.svg/2560px-Flag_of_Gabon.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box9:hover,
+.quotes .box.box9:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_the_United_Kingdom.png/1200px-Flag_of_the_United_Kingdom.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box10:hover,
+.quotes .box.box10:hover~.bg {
+  opacity: 1;
+  background: url("https://www.countryflags.com/wp-content/uploads/guinea-flag-png-xl.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box11:hover,
+.quotes .box.box11:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/2560px-Flag_of_Senegal.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box12:hover,
+.quotes .box.box12:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box13:hover,
+.quotes .box.box13:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/2560px-Flag_of_Japan.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box14:hover,
+.quotes .box.box14:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/600px-Flag_of_Portugal.svg.png?20210806190400") center;
+  background-size: cover;
+}
+
+.quotes .box.box15:hover,
+.quotes .box.box15:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/600px-Flag_of_Greece.svg.png?20160309091801") center;
+  background-size: cover;
+}
+
+.quotes .box.box16:hover,
+.quotes .box.box16:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/2560px-Flag_of_Colombia.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box17:hover,
+.quotes .box.box17:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1280px-Flag_of_Scotland.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box18:hover,
+.quotes .box.box18:hover~.bg {
+  opacity: 1;
+  background: url("https://flagpedia.net/data/flags/w1600/be.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box19:hover,
+.quotes .box.box19:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Cameroon.svg/2560px-Flag_of_Cameroon.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box20:hover,
+.quotes .box.box20:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/2560px-Flag_of_Argentina.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box21:hover,
+.quotes .box.box21:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/1024px-Flag_of_Wales.svg.png") center;
+  background-size: cover;
+}
+
+.quotes .box.box22:hover,
+.quotes .box.box22:hover~.bg {
+  opacity: 1;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/2560px-Flag_of_Poland.svg.png") center;
+  background-size: cover;
+}

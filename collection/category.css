@@ -1,0 +1,207 @@
+.container
+{
+  display: grid;
+}
+
+.entry {
+  border: 2px dotted black;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 0 50px;
+  /*animation: fadeIn 3s ease-in;*/
+}
+body {
+  font-family: helvetica;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.quotes {
+  width: 80vw;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.quotes .box {
+  position: relative;
+  width: 15vw;
+  height: 20vh;
+  min-height: 10vh;
+  background: black;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 2vw;
+  padding: 3vw;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.quotes .box h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+.quotes .box:hover {
+  color: white;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.quotes .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+  opacity: 1;
+  /* background: white; */
+/* background: -moz-linear-gradient(-45deg, #c88bff 15%, #b1ff73 100%);
+background: -webkit-linear-gradient(-45deg, #c88bff 15%,#b1ff73 100%); */
+background: (135deg, white 15%,black 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}
+
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+  opacity: 1;
+  /* background: #632c65;
+background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+background: -webkit-linear-gradient(-45deg, #632c65 15%,#56a5e2 100%); */
+background: (135deg, white 15%,black 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+  opacity: 1;
+  /* background: #4b384c;
+background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
+background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%); */
+background: (135deg, white 15%,black 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
+
+.quotes .box.box4:hover,
+.quotes .box.box4:hover~.bg {
+  opacity: 1;
+  /* background: #4b384c;
+background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
+background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%); */
+background: (135deg, white 15%,black 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
+
+.quotes .box.box5:hover,
+.quotes .box.box5:hover~.bg {
+  opacity: 1;
+  /* background: #4b384c;
+background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
+background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%); */
+background: (135deg, white 15%,black 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
+
+#ani {
+  position: absolute;
+  height: 30vh;
+  top: 1vh;
+  left: 41vw;
+  z-index: 2;
+}
+
+/* .topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.5vh 2vh;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  } */
+}

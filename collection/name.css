@@ -1,0 +1,438 @@
+.container
+{
+  display: grid;
+}
+
+.entry {
+  border: 2px dotted black;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 0 50px;
+  /*animation: fadeIn 3s ease-in;*/
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 5vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.quotes {
+  width: 80vw;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.quotes .box {
+  position: relative;
+  width: 15vw;
+  height: 20vh;
+  min-height: 10vh;
+  background: black;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 2vw;
+  padding: 3vw;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.quotes .box h4 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+.quotes .box:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.quotes .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+  opacity: 1;
+background: url("https://www.fcbarcelonanoticias.com/uploads/s1/26/17/48/ter-stegen-261748.jpeg") center;
+background-size: cover;
+}
+
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+  opacity: 1;
+  background: url("https://footballace.org/wp-content/uploads/2022/03/barcelonas-sergino-dest-taken-off-injured-ahead-of-usmnt-world-cup-qualifiers.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/DlIGGC6XsAASJKu?format=jpg&name=large") center;
+  background-size: cover;
+}
+
+.quotes .box.box4:hover,
+.quotes .box.box4:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/EXk8jJxXgAATcOy.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box5:hover,
+.quotes .box.box5:hover~.bg {
+  opacity: 1;
+  background: url("https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/29/7f21899c-e30c-415e-b0bc-63dc147e8507/HLUDOGTp.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box6:hover,
+.quotes .box.box6:hover~.bg {
+  opacity: 1;
+  background: url("https://i.ibb.co/M9bVKkL/yaypuig-1628859332-2639385834441622303-10113282299.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box7:hover,
+.quotes .box.box7:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/Ee_8b8NXsAAQLY5.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box8:hover,
+.quotes .box.box8:hover~.bg {
+  opacity: 1;
+  background: url("https://2.bp.blogspot.com/-blhsVTKwMeU/VfLMLGFI28I/AAAAAAAAsis/Uhx2gQjCBss/s0/Dani-Alves-Adidas-Yamamoto-Boots%2B%25281%2529.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box9:hover,
+.quotes .box.box9:hover~.bg {
+  opacity: 1;
+  background: url("https://media.gettyimages.com/photos/detail-view-of-memphis-depay-of-fc-barcelona-legs-with-tattoos-during-picture-id1347740886?s=2048x2048") center;
+  background-size: cover;
+}
+
+.quotes .box.box10:hover,
+.quotes .box.box10:hover~.bg {
+  opacity: 1;
+  background: url("https://i.imgur.com/o01KHsg.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box11:hover,
+.quotes .box.box11:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.dailystar.co.uk/incoming/article23499028.ece/ALTERNATES/s615b/0_Southampton-FC-vs-Wolverhampton-Wanderers-United-Kingdom-14-Feb-2021.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box12:hover,
+.quotes .box.box12:hover~.bg {
+  opacity: 1;
+  background: url("https://www.zupimages.net/viewer.php?id=21/42/p0mr.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box13:hover,
+.quotes .box.box13:hover~.bg {
+  opacity: 1;
+  background: url("https://www.fcbarcelonanoticias.com/uploads/s1/12/03/54/9/clementlenglet-barcelona17.jpeg") center;
+  background-size: cover;
+}
+
+.quotes .box.box14:hover,
+.quotes .box.box14:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/Eum3awwVEAEDj2o.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box15:hover,
+.quotes .box.box15:hover~.bg {
+  opacity: 1;
+  background: url("https://i.dailymail.co.uk/i/pix/2015/03/28/13/270F934800000578-0-image-m-38_1427548224436.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box16:hover,
+.quotes .box.box16:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.manchestereveningnews.co.uk/incoming/article18951493.ece/ALTERNATES/s1200b/0_GettyImages-1228353477.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box17:hover,
+.quotes .box.box17:hover~.bg {
+  opacity: 1;
+  background: url("https://media.gettyimages.com/photos/sergi-roberto-of-barcelona-scores-their-sixth-goal-during-the-uefa-picture-id649729624?s=612x612") center;
+  background-size: cover;
+}
+
+.quotes .box.box18:hover,
+.quotes .box.box18:hover~.bg {
+  opacity: 1;
+  background: url("https://www.fcbarcelona.com/photo-resources/2020/06/21/61c6c816-5866-4833-aa99-df46e9ace54c/mini_de-jong.jpg?width=1200&height=750") center;
+  background-size: cover;
+}
+
+.quotes .box.box19:hover,
+.quotes .box.box19:hover~.bg {
+  opacity: 1;
+  background: url("https://guardian.ng/wp-content/uploads/2020/05/images.jpeg-109.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box20:hover,
+.quotes .box.box20:hover~.bg {
+  opacity: 1;
+  background: url("https://estaticos-cdn.sport.es/clip/c8ae81e1-683e-47b9-a54b-963a0d5a9f10_alta-libre-aspect-ratio_default_0.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box21:hover,
+.quotes .box.box21:hover~.bg {
+  opacity: 1;
+  background: url("https://www.fcbarcelona.com/photo-resources/2022/02/02/b0cfe7d2-fc80-463e-9b3b-2218e2d430c2/2022-02-02_ENTRENOPRIMEREQUIP_48.JPG?width=1200&height=525") center;
+  background-size: cover;
+}
+
+.quotes .box.box22:hover,
+.quotes .box.box22:hover~.bg {
+  opacity: 1;
+  background: url("https://www.irishtimes.com/polopoly_fs/1.3912408.1559430249!/image/image.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box23:hover,
+.quotes .box.box23:hover~.bg {
+  opacity: 1;
+  background: url("https://cdn.images.express.co.uk/img/dynamic/67/750x445/1033948.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box24:hover,
+.quotes .box.box24:hover~.bg {
+  opacity: 1;
+  background: url("https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/21/4cf03d4f73ce30ee28f9ed3adb26526c08e72623.jpeg") center;
+  background-size: cover;
+}
+
+.quotes .box.box25:hover,
+.quotes .box.box25:hover~.bg {
+  opacity: 1;
+  background: url("https://thumbs.dreamstime.com/b/ibrahima-konate-milano-italy-february-liverpool-fc-uefa-champions-league-round-first-leg-match-241667116.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box26:hover,
+.quotes .box.box26:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/DlTEVwKWwAAnGJM.jpg:large") center;
+  background-size: cover;
+}
+
+.quotes .box.box27:hover,
+.quotes .box.box27:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.liverpoolecho.co.uk/incoming/article10573373.ece/ALTERNATES/s1200c/JS78408800.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box28:hover,
+.quotes .box.box28:hover~.bg {
+  opacity: 1;
+  background: url("https://media.gettyimages.com/photos/naby-keita-of-liverpool-holds-his-leg-following-an-injury-during-the-picture-id1287094969?s=612x612") center;
+  background-size: cover;
+}
+
+.quotes .box.box29:hover,
+.quotes .box.box29:hover~.bg {
+  opacity: 1;
+  background: url("https://c8.alamy.com/zooms/9/4aeb83dbaa3b4ffea22b61a509359e7c/tr9jgp.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box30:hover,
+.quotes .box.box30:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.mirror.co.uk/incoming/article22596992.ece/ALTERNATES/s1200c/0_Liverpool-Pre-Season-Training-Session.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box31:hover,
+.quotes .box.box31:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/EY4vuJ2WkAAApbh.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box32:hover,
+.quotes .box.box32:hover~.bg {
+  opacity: 1;
+  background: url("https://i.pinimg.com/736x/3a/8a/98/3a8a98b107836c25f16ab419bfca371a.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box33:hover,
+.quotes .box.box33:hover~.bg {
+  opacity: 1;
+  background: url("https://i.dailymail.co.uk/1/2018/10/05/00/4778666-6241919-Alex_Oxlade_Chamberlain_insisted_he_is_on_the_grind_as_he_bids_t-a-67_1538694056271.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box34:hover,
+.quotes .box.box34:hover~.bg {
+  opacity: 1;
+  background: url("https://cdn-japantimes.com/wp-content/uploads/2022/01/np_file_135145.jpeg") center;
+  background-size: cover;
+}
+
+.quotes .box.box35:hover,
+.quotes .box.box35:hover~.bg {
+  opacity: 1;
+  background: url("https://i.guim.co.uk/img/media/1ef9a8f940146d2534fbbe4d1129c7397f4595e8/0_363_4030_2417/master/4030.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d9863e2028177ead3d0fa081d9eda14d") center;
+  background-size: cover;
+}
+
+.quotes .box.box36:hover,
+.quotes .box.box36:hover~.bg {
+  opacity: 1;
+  background: url("https://preview.redd.it/rptofw3n0ik81.jpg?auto=webp&s=003a52ca43f5debcff76685058829963352d6beb") center;
+  background-size: cover;
+}
+
+.quotes .box.box37:hover,
+.quotes .box.box37:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.liverpoolecho.co.uk/incoming/article22995158.ece/ALTERNATES/s615b/0_GettyImages-1368652996.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box38:hover,
+.quotes .box.box38:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.liverpoolecho.co.uk/incoming/article13383122.ece/ALTERNATES/s615b/GettyImages-822231126.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box39:hover,
+.quotes .box.box39:hover~.bg {
+  opacity: 1;
+  background: url("https://thetopflight.com/wp-content/uploads/getty-images/2017/07/1191962049.jpeg") center;
+  background-size: cover;
+}
+
+.quotes .box.box40:hover,
+.quotes .box.box40:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.liverpoolecho.co.uk/incoming/article16543737.ece/ALTERNATES/s615/0_JS187260997.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box41:hover,
+.quotes .box.box41:hover~.bg {
+  opacity: 1;
+  background: url("https://pbs.twimg.com/media/EpZQlHBXYAclv6T.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box42:hover,
+.quotes .box.box42:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.dailystar.co.uk/incoming/article22116485.ece/ALTERNATES/s615b/1_JS212467016.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box43:hover,
+.quotes .box.box43:hover~.bg {
+  opacity: 1;
+  background: url("https://fearofbliss.files.wordpress.com/2010/08/messi27.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box44:hover,
+.quotes .box.box44:hover~.bg {
+  opacity: 1;
+  background: url("https://preview.redd.it/qg0oivaei5c81.jpg?auto=webp&s=a3cf8536164f5b8432d7bd73f3d5ee871e9864d1") center;
+  background-size: cover;
+}
+
+.quotes .box.box45:hover,
+.quotes .box.box45:hover~.bg {
+  opacity: 1;
+  background: url("https://www.alux.com/wp-content/uploads/2014/05/Most-Expensive-Celebrity-Body-Part-Insurances-Top-10-4.-David-Beckhams-Legs-70-million.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box46:hover,
+.quotes .box.box46:hover~.bg {
+  opacity: 1;
+  background: url("https://i.pinimg.com/originals/d4/b4/17/d4b417aea0a94adabd6d389bddd7e061.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box47:hover,
+.quotes .box.box47:hover~.bg {
+  opacity: 1;
+  background: url("https://therealchamps.com/wp-content/uploads/getty-images/2017/05/690063184-real-madrid-uefa-open-media-day.jpg.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box48:hover,
+.quotes .box.box48:hover~.bg {
+  opacity: 1;
+  background: url("https://cdn.images.express.co.uk/img/dynamic/67/590x/secondary/Neymar-2011190.jpg?r=1565955728461") center;
+  background-size: cover;
+}
+
+.quotes .box.box49:hover,
+.quotes .box.box49:hover~.bg {
+  opacity: 1;
+  background: url("https://i2-prod.dailyrecord.co.uk/incoming/article12638565.ece/ALTERNATES/s1200c/JS153421542.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box50:hover,
+.quotes .box.box50:hover~.bg {
+  opacity: 1;
+  background: url("https://previews.agefotostock.com/previewimage/medibigoff/58f360d15b7422afa35a0a81b987b985/pah-107308882.jpg") center;
+  background-size: cover;
+}
+
+.quotes .box.box51:hover,
+.quotes .box.box6:hover~.bg {
+  opacity: 1;
+  background: url("https://i.dailymail.co.uk/i/pix/2017/10/16/18/4565AF9600000578-4985718-image-a-16_1508176115013.jpg") center;
+  background-size: cover;
+}

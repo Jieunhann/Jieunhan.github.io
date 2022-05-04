@@ -1,3 +1,22 @@
+
+function randomColor() {
+    var color = '#';
+    var colorCode = ['ffaf40','2A9BFB','ff5967','7870cc','33ccbf']; // colors
+    var className = document.getElementsByClassName("change"); // class name to random color
+    var i;
+    color += colorCode[Math.floor(Math.random() * colorCode.length)];
+  for (var i = 0; i < className.length; i ++) {
+      className[i].style.backgroundColor = color; }
+}
+
+
+
+
+
+
+
+
+
 var anythingIWant = document.body;
 var isDark = false;
 // console.log(anythingIWant);
@@ -105,4 +124,67 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+
+
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  colorMode(HSB);
+}
+
+let x = 20
+let y = 20
+let a = 80
+let b = 20
+let pink = 50
+let myColor = 10
+
+function draw() {
+
+  variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+    a = mouseX
+    b = mouseY
+
+  strokeWeight (1);
+  let c;
+  c = color (mouseX, myColor, mouseY);
+
+   x = x+1
+  if(x > 100){
+  x = 90
+  y = 210
+  }
+
+   y = y+1
+   if (y > 220){
+   y=0
+   x=100
+   }
+
+   black = blue+1
+  if (black > 100){
+    white = 130
+  }
+
+   white = black+1
+  if (white > 100){
+    white = 0
+  }
+
+   b = b + 1
+  if (a > 250){
+    a = 0
+  }
+
+  fill(mouseX,mouseY,mouseX);
+
+}
+
+
+function variableEllipse(x, y, px, py) {
+  let speed = abs(x - px) + abs(y - py);
+  stroke(speed);
+  ellipse(x, y, speed, speed);
 }

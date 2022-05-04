@@ -1,8 +1,11 @@
+
+
+
 body{
   display:flex;
   flex-direction: column;
   height: 160vw;
- background: linear-gradient(150deg, #8cc63f 20%, #c8d678 38%, #ffb394 85%);
+ background: background-color: rgb(0, 255, 210);
   color:White;
   font-family: Helvetica;
   font-style: italic;

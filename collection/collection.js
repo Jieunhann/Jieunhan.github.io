@@ -17,7 +17,7 @@ var myGameArea = {
         this.interval = setInterval(updateGameArea, 20);
     },
     clear : function() {
-        this.context.clearEllip(0, 0, this.canvas.width, this.canvas.height);
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
     stop : function() {
         clearInterval(this.interval);

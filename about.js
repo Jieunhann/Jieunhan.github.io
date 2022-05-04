@@ -130,9 +130,12 @@ function topFunction() {
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.id("myCanvas");
   colorMode(HSB);
 }
+
+
 
 let x = 20
 let y = 20
@@ -140,7 +143,9 @@ let a = 80
 let b = 20
 let pink = 50
 let myColor = 10
-
+let blue = 40;
+let white = 70
+let black = 15
 function draw() {
 
   variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
@@ -163,10 +168,10 @@ function draw() {
    x=100
    }
 
-   black = blue+1
-  if (black > 100){
-    white = 130
-  }
+  //  black = blue+1
+  // if (black > 100){
+  //   white = 130
+  // }
 
    white = black+1
   if (white > 100){
